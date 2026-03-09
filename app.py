@@ -78,8 +78,5 @@ def render_tab(tab):
         "tab-fleet":   p6_fleet.layout,
     }.get(tab, html.P("Page not found"))
 
-
 if __name__ == "__main__":
-    app.run(debug=True)
-if __name__ == "__main__":
-    app.run(debug=False, host="0.0.0.0", port=10000)
+    app.run(host="0.0.0.0", port=10000, debug=False)
