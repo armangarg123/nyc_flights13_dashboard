@@ -3,7 +3,8 @@ app.py — NYC Flights 2013 Dashboard  v4
 Run:   python3 app.py
 Open:  http://127.0.0.1:8050
 """
-
+import sys, os
+sys.path.insert(0, os.path.dirname(__file__))
 import dash
 from dash import html, dcc, Output, Input
 
