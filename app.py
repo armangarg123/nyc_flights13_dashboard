@@ -12,6 +12,7 @@ from pages import (p1_best_airport, p2_best_carrier, p3_cancellations,
                    p4_delay, p5_destinations, p6_fleet)
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
+server = app.server
 app.title = "NYC Flights 2013"
 
 _TAB = {
